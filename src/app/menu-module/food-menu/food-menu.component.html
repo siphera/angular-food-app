@@ -1,0 +1,19 @@
+<!-- Container div for the menu -->
+<div class="menu">
+    <h2>Food Menu</h2>
+    <ul>
+        <ng-container *ngFor="let item of foodItems">
+            <!-- List item for each foor item, iterated over foodItems array -->
+            <li *ngIf="item.available">
+                <!-- Display the name of the food item -->
+                <h3>{{ item.name }}</h3>
+                <!-- Dispaly the desciption o fthe food item -->
+                <p>{{ item.description }}</p>
+                <!-- Display the price -->
+                <p>Price: {{ item.price }}</p>
+                <!-- Button to view details of the food item, triggers showDetails function on click -->
+                <button class="view-details" (click)="showDetails(item)">View Details</button>
+            </li>
+        </ng-container>
+    </ul>
+</div>
