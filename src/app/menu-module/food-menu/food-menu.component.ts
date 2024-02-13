@@ -10,10 +10,10 @@ import { CommonModule } from '@angular/common';
 })
 export class FoodMenuComponent {
   foodItems = [
-    { name: 'Pizza', description: 'Cheesy pizza', price: 10, available: true },
-    { name: 'Burger', description: 'Juicy burger', price: 7, available: true },
-    { name: 'Pie', description: 'Chicken pie', price: 30, available: true },
-    { name: 'Drinks', description: 'Fanta pine', price: 15, available: true },
+    { name: 'Pizza', description: 'Cheesy pizza', price: 10, available: true, imageUrl: "../../../assets/img/pizza.jpg"},
+    { name: 'Burger', description: 'Juicy burger', price: 7, available: true, imageUrl: "../../../assets/img/burger.jpg"},
+    { name: 'Pie', description: 'Chicken pie', price: 30, available: true, imageUrl: "../../../assets/img/pie.jpg"},
+    { name: 'Salads', description: 'Avocado Salad', price: 15, available: true, imageUrl: "../../../assets/img/meal-2.jpg" },
   ];
 
   // foodItems = [

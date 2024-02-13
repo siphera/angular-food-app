@@ -16,3 +16,23 @@ li { margin: 15px 0; }
     width: 150px;
     height: 40px;
 }
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to multiple lines if needed */
+    justify-content: center;
+  }
+  
+  .menu li {
+    list-style: none; /* Remove default bullet points */
+    margin: 0 20px 20px 0; /* Add spacing between items */
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    width: 300px;
+  }
+  .menu li img {
+    /* object-fit: cover; Fits image within container while maintaining aspect ratio */
+    width: 100%; /* Optional: Set width to 100% of list item */
+  }
+  

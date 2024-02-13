@@ -5,6 +5,7 @@
         <ng-container *ngFor="let item of foodItems">
             <!-- List item for each foor item, iterated over foodItems array -->
             <li *ngIf="item.available">
+                <img [src]="item.imageUrl"  alt="">
                 <!-- Display the name of the food item -->
                 <h3>{{ item.name }}</h3>
                 <!-- Dispaly the desciption o fthe food item -->
